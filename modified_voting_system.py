@@ -1,13 +1,14 @@
+# Voting System with Enhanced String Manipulation
+
 # first we will take input of what nominee what we want to keep
-nominee1 = input("Enter the name of the 1st nominee: ")
-nominee2 = input("Enter the name of the 2nd nominee: ")
+nominee1 = input("Enter the name of the 1st nominee: ").strip()  # Remove leading/trailing spaces
+nominee2 = input("Enter the name of the 2nd nominee: ").strip()  # Remove leading/trailing spaces
 
 # initially vote count for both must be 0
 nm1_votes = 0
 nm2_votes = 0
 
-voter_id = [1,2,3,4,5,6,7,8,9,10]
-
+voter_id = list(range(1, 11))  # Simplified voter ID generation
 no_of_voter = len(voter_id)
 
 while True:
@@ -46,4 +47,4 @@ while True:
         else:
             print("You are not a voter OR You have already voted")
 
-            
+
