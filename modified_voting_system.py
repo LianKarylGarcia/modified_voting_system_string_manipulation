@@ -23,7 +23,7 @@ while True:
             print(f"{nominee2.title()} has won the election with {percent:.2f}% of votes!".upper())  # Capitalized winner name
             break # to get rid of infinite loop
         else:
-            print("Both have equal number of votes !!! Government will decide who will rule")
+            print("Both have equal number of votes !!! Government will decide who will rule.")
             break
         
 
@@ -38,7 +38,7 @@ while True:
         vote = int(input("Enter you precious vote : "))
         if vote == 1:
             nm1_votes +=1
-            print("Thank you to give your important vote to them !!".upper()) # To print it in uppercase         elif vote == 2:
+            print("Thank you to give your important vote to them !!".upper()) # To print it in uppercase         
             nm2_votes +=1
             print("Thank you to give your important vote to them !!".upper()) # To print it in uppercase
         elif vote > 2:
