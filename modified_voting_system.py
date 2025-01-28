@@ -27,7 +27,7 @@ while True:
             break
         
 
-    voter = int(input("Enter your voter id : "))
+    voter = int(input("Enter your voter id : ").strip())
     if voter in voter_id:
         print("You are a voter".upper())
         voter_id.remove(voter) # we will remove so that agin same voter can't vote
