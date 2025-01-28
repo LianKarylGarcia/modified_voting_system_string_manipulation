@@ -8,8 +8,7 @@ nominee2 = input("Enter the name of the 2nd nominee: ").strip()  # Remove leadin
 nm1_votes = 0
 nm2_votes = 0
 
-voter_id = [1,2,3,4,5,6,7,8,9,10]
-
+voter_id = list(range(1, 11))  # Simplified voter ID generation
 no_of_voter = len(voter_id)
 
 while True:
